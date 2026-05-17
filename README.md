@@ -68,6 +68,7 @@ $$
 $$
 \text{Min Modules per String} = \frac{\text{Inverter Min V}_{DC}}{\text{Module } V_{oc}} = \frac{415\text{V}}{46.2\text{V}} = 8.98 \rightarrow \mathbf{9 \text{ modules min}}
 $$
+
 The selected layout of **18 modules per string** perfectly centers within this window, ensuring the system rema
 ins operational under all thermal extremes without trigger-tripping the inverter's voltage safety margins.
 
