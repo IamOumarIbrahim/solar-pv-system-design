@@ -38,19 +38,29 @@ A professional-grade commercial-scale photovoltaic (PV) system design and perfor
 
 ### 1. System Size Capacity Limits
 Using the measured roof area and a standard module efficiency of 17%, the maximum raw capacity limit was calculated:
-$$C_{\text{array}} = A_{\text{roof}} \times \eta_{\text{module}} \times 1000 \text{ W/m}^2$$
-$$C_{\text{array}} = 2228.98 \text{ m}^2 \times 0.17 \times 1000 \text{ W/m}^2 = 378,926 \text{ W (378.9 kW DC)}$$
+$$
+C_{\text{array}} = A_{\text{roof}} \times \eta_{\text{module}} \times 1000 \text{ W/m}^2
+$$
+$$
+C_{\text{array}} = 2228.98 \text{ m}^2 \times 0.17 \times 1000 \text{ W/m}^2 = 378,926 \text{ W (378.9 kW DC)}
+$$
 The final physical design installs **367.85 kW DC** ($1,116$ modules), utilizing **97.1%** of the absolute geometric limit to preserve structural margin and avoid overlapping edges.
 
 ### 2. Inverter Sizing & Ratio Optimization
 Targeting a commercial DC/AC ratio of approximately 1.2:
-$$\text{Target Inverter AC Capacity} = \frac{\text{System Size (DC W)}}{1.2} = \frac{378,926 \text{ W}}{1.2} \approx 315,771 \text{ W}$$
+$$
+\text{Target Inverter AC Capacity} = \frac{\text{System Size (DC W)}}{1.2} = \frac{378,926 \text{ W}}{1.2} \approx 315,771 \text{ W}
+$$
 By using **five 60 kW SMA Sunny Tripower inverters** (300 kW total AC capacity), we achieve a highly optimized DC/AC ratio of **1.23**, ensuring standard commercial performance and minimal clipping loss.
 
 ### 3. Module String Configuration Limits
 Based on the selected SMA inverter specific input voltage range (**Min $V_{DC} = 415\text{V}$**, **Max $V_{DC} = 980\text{V}$**) and the module's open-circuit voltage ($V_{oc} = 46.2\text{V}$):
-$$\text{Max Modules per String} = \frac{\text{Inverter Max V}_{DC}}{\text{Module } V_{oc}} = \frac{980\text{V}}{46.2\text{V}} = 21.2 \rightarrow \mathbf{21 \text{ modules max}}$$
-$$\text{Min Modules per String} = \frac{\text{Inverter Min V}_{DC}}{\text{Module } V_{oc}} = \frac{415\text{V}}{46.2\text{V}} = 8.98 \rightarrow \mathbf{9 \text{ modules min}}$$
+$$
+\text{Max Modules per String} = \frac{\text{Inverter Max V}_{DC}}{\text{Module } V_{oc}} = \frac{980\text{V}}{46\.2\text{V}} = 21.2 \rightarrow \mathbf{21 \text{ modules max}}
+$$
+$$
+\text{Min Modules per String} = \frac{\text{Inverter Min V}_{DC}}{\text{Module } V_{oc}} = \frac{415\text{V}}{46.2\text{V}} = 8.98 \rightarrow \mathbf{9 \text{ modules min}}
+$$
 The selected layout of **18 modules per string** perfectly centers within this window, ensuring the system remains operational under all thermal extremes without trigger-tripping the inverter's voltage safety margins.
 
 ---
