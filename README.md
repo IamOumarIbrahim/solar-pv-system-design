@@ -101,11 +101,11 @@ Detailed loss profiling in SAM reveals how the system energy is affected by the 
 
 ```mermaid
 graph TD
-    Irrad[Total Solar Irradiance] --> Soil[Soiling Loss: -5.0%]
-    Soil --> Temp[Thermal Temperature Degradation: -8.0%]
-    Temp --> Invert[Inverter Conversion Loss: -1.5%]
-    Invert --> Clipping[Inverter Power Clipping: -0.002%]
-    Clipping --> Output[Annual Output Energy: 629,127 kWh AC]
+    Irrad[Total Solar Irradiance] --> Soil["Soiling Loss: -5.0%"]
+    Soil --> Temp["Thermal Temperature Degradation: -8.0%"]
+    Temp --> Invert["Inverter Conversion Loss: -1.5%"]
+    Invert --> Clipping["Inverter Power Clipping: -0.002%"]
+    Clipping --> Output["Annual Output Energy: 629,127 kWh AC"]
 
     classDef default fill:#0f172a,stroke:#3b82f6,stroke-width:2px,color:#fff;
     classDef loss fill:#7f1d1d,stroke:#f87171,stroke-width:1.5px,color:#fff;
